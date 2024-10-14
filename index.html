@@ -6,59 +6,6 @@
 <text-familiy=Arial>
 
 
-<div class="container"></div>
-
-<style>
-  .container {
-    --uib-size: 1200px;
-    --uib-color: darkblue;
-    --uib-speed: 5.55s;
-    --uib-stroke: 5px;
-    --uib-bg-opacity: .1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--uib-stroke);
-    width: var(--uib-size);
-    border-radius: calc(var(--uib-stroke) / 2);
-    overflow: hidden;
-    transform: translate3d(25, 25, 25);
-  }
-
-  .container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--uib-color);
-    opacity: var(--uib-bg-opacity);
-    transition: background-color 0.3s ease;
-  }
-
-  .container::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: calc(var(--uib-stroke) / 2);
-    animation: wobble var(--uib-speed) ease-in-out infinite;
-    transform: translateX(-95%);
-    background-color: var(--uib-color);
-    transition: background-color 0.3s ease;
-  }
-
-  @keyframes wobble {
-    0%,
-    100% {
-      transform: translateX(-95%);
-    }
-    50% {
-      transform: translateX(95%);
-    }
-  }
-</style>
 
 
 
@@ -72,7 +19,6 @@
 <p>
 <text>webOS apps for website</text>
 <p></p>
-  __________________________________________________________________________________________
   LG Content Store apps
   <p></p>
 <text>,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</text>
