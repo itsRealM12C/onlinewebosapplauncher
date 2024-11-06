@@ -16,7 +16,9 @@
 
  <button onclick="window.location.href='https://foxxum.itsmy.tv/spielecenter/?';"><center> <b>Launch  App</b> <p>Modern version</center></button> </center>
 
- <center><button onclick="window.location.href='https://foxxum.itsmy.tv/spielecenter/?';"><center> <b>Launch  App</b> <p>Latest version</center></button> </center>
+ <center><button onclick="window.location.href='https://foxxum.itsmy.tv/spielecenter/?';"><center> <b>Launch  App</b> <p>Latest version (works on PC only)</center></button> </center>
+ 
+  <center><button onclick="window.location.href='https://itsmy.tv/spielecenter/?';"><center> <b>Launch  App</b> <p>Latest version (works on TV only)</center></button> </center>
  
 </center>
 <center>
@@ -57,9 +59,14 @@
     if(e.keyCode==53)//key code for '5'
         location="http://pro7.gofresh.tv/spielecenter/"
 })
+
+ document.addEventListener('keydown',function(e){
+    if(e.keyCode==54)//key code for '6'
+        location="http://itsmy.tv/spielecenter"
+})
 </script>
 
-<center>If your mouse is not connected to your TV, just press <b>1</b> to launch the old version, and press <b>2</b> to launch the modern version, and press <b>3</b> to launch the latest version and press the <b>4</b> to launch developer version, and press <b>5</b> to launch different version.</center>
+<center>If your mouse is not connected to your TV, just press <b>1</b> to launch the old version, and press <b>2</b> to launch the modern version, and press <b>3</b> to launch the latest version and press the <b>4</b> to launch developer version, and press <b>5</b> to launch different version, and press <b>6</b> to launch latest version (TV only).</center>
 </body>
 </html>
 
