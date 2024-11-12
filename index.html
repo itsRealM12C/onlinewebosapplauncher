@@ -31,7 +31,7 @@
     <title>Menu 24</title>
   </head>
   <body>
-    <button onclick="window.location.href='https://www.youtube.com/tv?env_forceFullAnimation=1';">
+    <button onclick="window.location.href='https://www.youtube.com/tv?launch=menu&additionalDataUrl=http%3A%2F%2Flocalhost%3A56789%2Fapps%2FYouTube%2Fdial_data%3F&additionalDataUrl=http://localhost:56789/apps/YouTube/dial_data?#/';">
       <b>Launch App</b>
     </button>
   </body>
@@ -344,9 +344,12 @@ document.addEventListener('keydown',function(e){
         location="https://itsrealm12c.github.io/onlinewebosapplauncher/"
 })
 
-        document.addEventListener('keydown',function(e){
-         if (typeof VK_RED === 'undefined') VK_RED = 403;
-  location="https://apps.tvgam.es/tv_games/foxxum_portal/production/portal/index.html#portal"
+      document.addEventListener('keydown',function(e){
+    if(e.keyCode==8)//key code for 'backspace'
+        location="https://apps.tvgam.es/tv_games/foxxum_portal/production/portal/index.html#portal"
+})
+
+
           })
   </script>
 |
