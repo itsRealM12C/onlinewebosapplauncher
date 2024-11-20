@@ -17,8 +17,6 @@ body {
 }
 </style>
 
-<iframe src="https://itsrealm12c.github.io/onlinewebosapplauncher"></iframe>
-#document ()
 
 <div class="cursor rounded"></div>
 <div class="cursor pointed"><div>
@@ -482,11 +480,28 @@ param => {
 
 
 <p>
-<img id="banner-load" src="assets/fakesponsors/">
 
 
+    <script>
+        // Array of image URLs
+        const images = [
+            "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead1.png",
+            "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead2.png",
+            "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead3.png",
+            "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead4.png",  
+            "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead5.png",
+             "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead6.png",
+              "https://itsrealm12c.github.io/onlinewebosapplauncher/assets/fakesponsors/fakead7.png",
 
+        ];
 
+        // Select a random image
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomImage = images[randomIndex];
+
+        // Set the image source
+        document.getElementById('randomImage').src = randomImage;
+    </script>
 
 
 
