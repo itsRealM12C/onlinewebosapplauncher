@@ -531,7 +531,44 @@ document.addEventListener('keydown',function(e){
 
 
 
+<script type="text/javascript">
 
+        if (typeof VK_0 === 'undefined') VK_0 = 48;
+        if (typeof VK_1 === 'undefined') VK_1 = 49;
+        if (typeof VK_2 === 'undefined') VK_2 = 50;
+        if (typeof VK_3 === 'undefined') VK_3 = 51;
+        if (typeof VK_4 === 'undefined') VK_4 = 52;
+        if (typeof VK_5 === 'undefined') VK_5 = 53;
+        if (typeof VK_6 === 'undefined') VK_6 = 54;
+        if (typeof VK_7 === 'undefined') VK_7 = 55;
+        if (typeof VK_8 === 'undefined') VK_8 = 56;
+        if (typeof VK_9 === 'undefined') VK_9 = 57;
+        if (typeof VK_BACK === 'undefined') VK_BACK = 461;
+        if (typeof VK_BACK_SPACE === 'undefined') VK_BACK_SPACE = 8;
+        if (typeof VK_RED === 'undefined') VK_RED = 403;
+        if (typeof VK_GREEN === 'undefined') VK_GREEN = 404;
+        if (typeof VK_YELLOW === 'undefined') VK_YELLOW = 405;
+        if (typeof VK_BLUE === 'undefined') VK_BLUE = 406;
+        if (typeof VK_REWIND === 'undefined') VK_REWIND = 412;
+        if (typeof VK_STOP === 'undefined') VK_STOP = 413;
+        if (typeof VK_PLAY === 'undefined') VK_PLAY = 415;
+        if (typeof VK_RECORD === 'undefined') VK_RECORD = 416;
+        if (typeof VK_FAST_FWD === 'undefined') VK_FAST_FWD = 417;
+        if (typeof VK_PREV === 'undefined') VK_PREV = 424;
+        if (typeof VK_NEXT === 'undefined') VK_NEXT = 425;
+        if (typeof VK_PAUSE === 'undefined') VK_PAUSE = 19;
+        if (typeof VK_LEFT === 'undefined') VK_LEFT = 37;
+        if (typeof VK_UP === 'undefined') VK_UP = 38;
+        if (typeof VK_RIGHT === 'undefined') VK_RIGHT = 39;
+        if (typeof VK_DOWN === 'undefined') VK_DOWN = 40;
+        document.onkeydown = function keyhandler(e) {
+            switch (e.keyCode) {
+                case VK_RED:
+                document.location.reload(true);
+                break;
+            }
+        }
+    </script>
 
 
 
