@@ -451,8 +451,7 @@ document.addEventListener('keydown',function(e){
   <b>9</b> = Couchplay Games
 
 |
-  <b>BACK</b> = TV Games
-  
+  <b>BACK</b> = Free Games
 |
 </body>
 </html>
@@ -526,8 +525,11 @@ document.addEventListener('keydown',function(e){
 
 
 
-
-
+<script>
+  // Handle undefined VK_BACK for TV remotes and default it to 461
+if (typeof VK_BACK === 'undefined') VK_BACK = 461;
+ location="https://service.play.works/service/apps/html5_hub/index.html?config=%2F%2Fservice.play.works%2Fshared%2Fgames_portal%2Fconfig.json&platform=panasonic"
+   </script>
 
 
 
