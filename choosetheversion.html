@@ -2,13 +2,22 @@
 <html>
 <body>
 
-<div style = "background-image: url('https://64.media.tumblr.com/02db261b39fd30c38a21bf7bf2b60dba/tumblr_pxcvcjeiIy1uzwgsuo1_400.gif');">
+<div style = "no" "background-image: url('https://64.media.tumblr.com/02db261b39fd30c38a21bf7bf2b60dba/tumblr_pxcvcjeiIy1uzwgsuo1_400.gif');" width="100%" height="100%">
 
 <center><h1 style="border:2px solid DodgerBlue;">Select Version</h1></center>
 <center>
    <p><p>
    <button onclick="window.location.href='https://lg.itsmy.tv/spielecenter/';">
-   
+
+      <style>
+body {
+  background-image: url('https://64.media.tumblr.com/02db261b39fd30c38a21bf7bf2b60dba/tumblr_pxcvcjeiIy1uzwgsuo1_400.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+      
 <b>Launch  App</b> <p>Old Version
 <p></p>
 <p><t>
@@ -35,9 +44,17 @@
   <center><button onclick="window.location.href='https://samsungapp.itsmy.tv/spielecenter/';"><center> <b>Launch  App</b> <p>Samsung version</center></button> </center>
   
     <center><button onclick="window.location.href='https://lgapp.itsmy.tv/spielecenter/';"><center> <b>Launch  App</b> <p>LG version</center></button> </center>
+    
+        <center><button onclick="window.location.href='https://vizio.itsmy.tv/spielecenter/';"><center> <b>Launch  App</b> <p>Vizio version</center></button> </center>
+                <center><button onclick="window.location.href='https://vestel.itsmy.tv/spielecenter/';"><center> <b>Launch  App</b> <p>Vestel version</center></button> </center>
  
   
 <script>
+ document.addEventListener('keydown',function(e){
+    if(e.keyCode==48)//key code for '0'
+        location="https://vestel.itsmy.tv/spielecenter/"
+})
+
   document.addEventListener('keydown',function(e){
     if(e.keyCode==49)//key code for '1'
         location="https://lg.itsmy.tv/spielecenter/"
@@ -78,10 +95,14 @@
     if(e.keyCode==56)//key code for '8'
         location="https://lgapp.itsmy.tv/spielecenter/"
 })
+
+ document.addEventListener('keydown',function(e){
+    if(e.keyCode==57)//key code for '9'
+        location="https://vizio.itsmy.tv/spielecenter/"
+})
 </script>
 
-<center>If your mouse is not connected to your TV, just press <b>1</b> to launch the old version, and press <b>2</b> to launch the modern version, and press <b>3</b> to launch the latest version and press the <b>4</b> to launch developer version, and press <b>5</b> to launch different version, and press <b>6</b> to launch latest version (TV only), and press <b>7</b> to launch Samsung version, and press <b>8</b> to launch LG version.</center>
+<center>If your mouse is not connected to your TV, just press <b>1</b> to launch the old version, and press <b>2</b> to launch the modern version, and press <b>3</b> to launch the latest version and press the <b>4</b> to launch developer version, and press <b>5</b> to launch different version, and press <b>6</b> to launch latest version (TV only), and press <b>7</b> to launch Samsung version, and press <b>8</b> to launch LG version, and press <b>9</b> to launch Vizio version, and press <b>0</b> to launch Vestel version.</center>
 </body>
 </html>
-
 
