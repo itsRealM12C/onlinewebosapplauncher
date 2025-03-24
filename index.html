@@ -569,12 +569,22 @@ document.addEventListener('keydown',function(e){
         if (typeof VK_DOWN === 'undefined') VK_DOWN = 40;
         document.onkeydown = function keyhandler(e) {
             switch (e.keyCode) {
-                case VK_RED:
+                case VK_BLUE:
                 document.location.reload(true);
                 break;
             }
         }
     </script>
+
+
+  <script>
+    document.onkeydown = function keyhandler(e) {
+            switch (e.keyCode) {
+                case VK_RED:
+                location="https://www.youtube.com/tv?env_forceFullAnimation=1&env_enableVoice=1&env_enableWebSpeech=0"
+            }
+        }
+  </script>
 
 
 
