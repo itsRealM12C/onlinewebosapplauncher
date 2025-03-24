@@ -131,7 +131,7 @@ body {
   </body>
 </html>
 
-  <text><color="lightblue">Spotify</color></text>
+  <text>Spotify</color></text>
 <html>
   <head>
   </head>
@@ -459,7 +459,9 @@ document.addEventListener('keydown',function(e){
   <b>9</b> = Couchplay Games
 
 |
-  <b>BACK</b> = Free Games
+  <b>YELLLOW</b> = Free Games
+|
+  <B>GREEN</B> = TV Games
 |
 </body>
 </html>
@@ -584,6 +586,20 @@ document.addEventListener('keydown',function(e){
                 location="https://www.youtube.com/tv?env_forceFullAnimation=1&env_enableVoice=1&env_enableWebSpeech=0"
             }
         }
+
+    document.onkeydown = function keyhandler(e) {
+            switch (e.keyCode) {
+                case VK_GREEN:
+                location="https://apps.tvgam.es/tv_games/foxxum_portal/production/portal/index.html#portal"
+            }
+    }
+
+    document.onkeydown = function keyhandler(e) {
+            switch (e.keyCode) {
+                case VK_YELLOW:
+                location="https://service.play.works/service/apps/portal_vizio/index.html"
+            }
+    }
   </script>
 
 
