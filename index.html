@@ -462,7 +462,7 @@ document.addEventListener('keydown',function(e){
 
             document.addEventListener('keydown',function(e){
     if(e.keyCode==55)//key code for '7'
-        location="https://www.youtube.com/tv?env_forceFullAnimation=1&env_enableVoice=1&env_enableWebSpeech=0"
+        location="https://app.megogo.games"
 })
 
               document.addEventListener('keydown',function(e){
@@ -507,7 +507,7 @@ document.addEventListener('keydown',function(e){
   <b>6</b> = SS-IPTV
 | 
 
-  <b>7</b> = Youtube TV
+  <b>7</b> = Megogo Games
  
 |
   <b>8</b> = myTuner Radio
@@ -517,8 +517,12 @@ document.addEventListener('keydown',function(e){
 
 |
   <b>YELLLOW</b> = Free Games
-|
+|  
   <B>GREEN</B> = TV Games
+|
+  <b>BLUE</b> = Reload
+|
+  <b>RED</b> = YouTube
 |
 </body>
 </html>
@@ -662,7 +666,14 @@ document.addEventListener('keydown',function(e){
 
 
 
-
+<script>
+document.onkeydown = function keyhandler(e) {
+            switch (e.keyCode) {
+                case VK_BLUE:
+                document.location.reload(true);
+                break;
+  
+</script>
 
 
 
